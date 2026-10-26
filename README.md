@@ -111,7 +111,7 @@ Exemple:
 
 Exemple:
 [Validateur.java](TDD/src/main/java/formation/Validateur.java)
-[Validateur4Test.java](TDD/src/test/java/formation/CalculatValidateur4Test.java)
+[Validateur4Test.java](TDD/src/test/java/formation/Validateur4Test.java)
 
 ## Mockito
 
@@ -134,4 +134,15 @@ Exemple:
 * Simuler les dependances
 * Controler le comportement
 * Tester des scenarios complexes
+
+Exemple:
+[NotificationService.java](TDD/src/main/java/formation/Stub/Services/NotificationService.java)
+[NotificationServiceTest.java](TDD/src/test/java/formation/Stub/NotificationServiceTest.java)
+
+* Simuler comportement plus complexes
+* Simuler des exceptions
+
+Exemple:
+[Service.java](TDD/src/main/java/formation/Stub/Services/Service.java)
+[ServiceTest.java](TDD/src/test/java/formation/Stub/ServiceTest.java)
 

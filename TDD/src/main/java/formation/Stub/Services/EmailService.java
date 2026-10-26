@@ -1,5 +1,6 @@
 package formation.Stub.Services;
 
-public class EmailService {
+public interface EmailService {
 
+    public void envoyerEmail(String email, String message);
 }
