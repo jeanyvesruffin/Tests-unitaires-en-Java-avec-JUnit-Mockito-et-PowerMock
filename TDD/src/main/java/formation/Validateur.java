@@ -9,4 +9,8 @@ public class Validateur {
 
     }
 
+    public boolean estValide(String valeur) {
+        return valeur != null && !valeur.isEmpty();
+    }
+
 }

@@ -91,8 +91,47 @@ Exemple :
 
 * `assertThrows`
 * Capture l'exception
-Exemple :
+Exemple:
 [Validateur.java](TDD/src/main/java/formation/Validateur.java)
 [Validateur3Test.java](TDD/src/test/java/formation/Validateur3Test.java)
 
 ## Junit test parametres
+
+* `@ParameterizedTest` et `@ValuesSource` --> JUnit5
+
+Exemple:
+[Palindrome.java](TDD/src/main/java/formation/Palindrome.java)
+[PalindromeTest.java](TDD/src/test/java/formation/PalindromeTest.java)
+
+* `@RunWith` et `@Parameters` --> Junit4
+
+Exemple:
+[Calculatrice.java](TDD/src/main/java/formation/Calculatrice.java)
+[Calculatrice2Test.java](TDD/src/test/java/formation/Calculatrice2Test.java)
+
+Exemple:
+[Validateur.java](TDD/src/main/java/formation/Validateur.java)
+[Validateur4Test.java](TDD/src/test/java/formation/CalculatValidateur4Test.java)
+
+## Mockito
+
+* Simuler des objets
+* Controle le comportement
+* Verifier les interactions
+  
+A utiliser si:
+
+* Difficulte de tester certaines classes de maniere isolee
+* Mockito simule les dependences
+
+Exemple:
+[Service.java](TDD/src/main/java/formation/TDMockito/Service/Service.java)
+[ServiceTest.java](TDD/src/test/java/formation/TDMockitoTest/Service/ServiceTest.java)
+
+### Creation stub et mock
+
+* Stub: Un mock qui retourne des valeurs specifiques
+* Simuler les dependances
+* Controler le comportement
+* Tester des scenarios complexes
+
