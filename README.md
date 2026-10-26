@@ -115,9 +115,9 @@ Exemple:
 
 ## Mockito
 
-* Simuler des objets
+* Simulez des objets
 * Controle le comportement
-* Verifier les interactions
+* Verifiez les interactions
   
 A utiliser si:
 
@@ -128,21 +128,87 @@ Exemple:
 [Service.java](TDD/src/main/java/formation/TDMockito/Service/Service.java)
 [ServiceTest.java](TDD/src/test/java/formation/TDMockitoTest/Service/ServiceTest.java)
 
-### Creation stub et mock
+### Creation stub et mock `mock` `when.thenReturn` `when.thenThrow`
 
 * Stub: Un mock qui retourne des valeurs specifiques
-* Simuler les dependances
-* Controler le comportement
-* Tester des scenarios complexes
+* Simulez les dependances
+* Controlez le comportement
+* Testez des scenarios complexes
 
 Exemple:
 [NotificationService.java](TDD/src/main/java/formation/Stub/Services/NotificationService.java)
 [NotificationServiceTest.java](TDD/src/test/java/formation/Stub/NotificationServiceTest.java)
 
-* Simuler comportement plus complexes
-* Simuler des exceptions
+* Simulez comportement plus complexes
+* Simulez des exceptions
 
 Exemple:
 [Service.java](TDD/src/main/java/formation/Stub/Services/Service.java)
 [ServiceTest.java](TDD/src/test/java/formation/Stub/ServiceTest.java)
+
+### Verifier les interactions avec Mockito `verify` `times`
+
+* Validez le comportement
+* Detectez les erreurs
+* Documentez les attentes
+
+* `verify` `times`
+* Combien de fois la methode a ete appelee
+
+Exemple:
+[Service.java](TDD/src/main/java/formation/Stub/Services/Service.java)
+[ServiceTest.java](TDD/src/test/java/formation/Stub/ServiceTest.java)
+
+* Verfiez les arguments
+* verifiez les appels au methode void
+
+Exemple:
+[Service.java](TDD/src/main/java/formation/Stub/Services/Service.java)
+[ServiceTest.java](TDD/src/test/java/formation/Stub/ServiceTest.java)
+
+### Comportements complexes
+
+* Simulation Séquences d'appels
+
+Exemple:
+[Service.java](TDD/src/main/java/formation/Stub/Services/GestionStock.java)
+[ServiceTest.java](TDD/src/test/java/formation/Stub/GestionStockTest.java)
+
+* Simulations Exceptions
+
+Exemple:
+[Service.java](TDD/src/main/java/formation/Stub/Services/GestionPaiement.java)
+[ServiceTest.java](TDD/src/test/java/formation/Stub/GestionPaiementTest.java)
+
+* Simulation d'actions Specifiques
+
+Exemple:
+[ServiceTest.java](TDD/src/test/java/formation/Stub/GestionnaireNotificationServiceTest.java)
+
+### Bonnes pratiques de Mockito
+
+* Evitez les tests trop complexes
+  * Divisez les tests en plusieurs plus petits
+  * Utilisez des mocks avec precaution
+  * Gardez les tests cibles
+
+Exemple:
+[ServiceTest.java](TDD/src/test/java/formation/Stub/GestionnaireDeCommandesTest.java)
+
+* Utilisez des mocks avec precaution
+  * Ne pas trop mockez
+  * Evitez les mocks profond
+  * Utilisez des objects réels lorsque c'est possible
+
+* Testez les ca limites :
+  * Valeurs nulles
+  * Valeurs extremes
+  * Cas d'erreur
+
+Exemple:
+[ValidateurTestBestPratique](TDD/src/test/java/formation/ValidateurTestBestPratique.java)
+
+* Maintenez les tests a jour:
+  * Réexaminez les tests après chaque modification
+  * Supprimez les tests inutiles
 

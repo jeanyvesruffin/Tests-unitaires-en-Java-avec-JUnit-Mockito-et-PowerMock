@@ -4,4 +4,6 @@ public interface Repository {
 
     String recupererDonnees(int id) throws Exception;
 
+    void sauvegarder(String data);
+
 }

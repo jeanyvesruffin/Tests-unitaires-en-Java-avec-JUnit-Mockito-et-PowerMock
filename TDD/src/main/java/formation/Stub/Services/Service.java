@@ -18,7 +18,19 @@ public class Service {
             return "Erreur";
 
         }
+    }
 
+    public void traiterDonnees(int id) throws Exception {
+        repository.recupererDonnees(id);
+        repository.recupererDonnees(id);
+    }
+
+    public void traiterDonnees2(int id) throws Exception {
+        repository.recupererDonnees(id);
+    }
+
+    public void saveData(String data) {
+        repository.sauvegarder(data);
     }
 
 }
